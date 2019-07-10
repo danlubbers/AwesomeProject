@@ -23,7 +23,9 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import HelloWorldApp from './HelloWorld';
+import HelloWorldApp from './Components/HelloWorld';
+import Bananas from './Components/Bananas';
+import Greeting from './Components/Greeting';
 
 const App = () => {
   return (
@@ -33,7 +35,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Header />
+          <Bananas />
           <View style={styles.body}>
             {/* <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
@@ -44,6 +46,9 @@ const App = () => {
             </View> */}
             <View style={styles.sectionContainer}>
               <HelloWorldApp />
+            </View>
+            <View>
+              <Greeting />
             </View>
             {/* <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>See Your Changes</Text>
