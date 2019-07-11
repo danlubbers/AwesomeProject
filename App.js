@@ -25,7 +25,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import HelloWorldApp from './Components/HelloWorld';
 import Bananas from './Components/Bananas';
-import Greeting from './Components/Greeting';
+// import Greeting from './Components/Greeting';
+import Blink from './Components/Blink';
 
 const App = () => {
   return (
@@ -47,8 +48,11 @@ const App = () => {
             <View style={styles.sectionContainer}>
               <HelloWorldApp />
             </View>
-            <View>
+            {/* <View>
               <Greeting />
+            </View> */}
+            <View>
+              <Blink />
             </View>
             {/* <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>See Your Changes</Text>
